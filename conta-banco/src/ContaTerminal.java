@@ -20,14 +20,16 @@ public class ContaTerminal {
         System.out.println("Digite o nome do cliente: ");
         String nomecliente = scanner.next();
 
+        System.out.println("Digite o Sobrenome do cliente: ");
+        String sobrenomecliente = scanner.next();
+
         System.out.println("Digite o saldo: ");
         Double saldo = scanner.nextDouble();
 
         //Obter os valores digitado pelo scanner
-
         //Exibir a mensagem da conta criada
         System.out.println(
-            "Olá " + nomecliente +", obrigado por criar uma conta em nosso banco, sua agência é "+ agencia +", conta " + numconta + " e seu saldo R$" + saldo + " já está disponível para saque "
+            "Olá " + nomecliente + " " + sobrenomecliente  +", obrigado por criar uma conta em nosso banco, sua agência é "+ agencia +", conta " + numconta + " e seu saldo R$" + saldo + " já está disponível para saque "
         );
 
     }
